@@ -1,11 +1,24 @@
-INTERAÇÃO E MOTIVAÇÃO EM AULAS REMOTAS: ESTUDO PARA O DESENVOLVIMENTO DE APLICATIVO
+PROJETO
 
-Com a pandemia do coronavírus, o ensino remoto se tornou uma realidade na vida de estudantes e professores de todo o mundo. 
-Tal situação tem gerado diversas mudanças nos formatos de aulas, inclusive quando nos referimos à motivação dos alunos e as maneiras de interação nesse novo formato.
-Pensando nisso, este trabalho tem como base um estudo aplicado com o intuito de servir de apoio no processo ensino-aprendizagem. 
-O resultado da pesquisa, será usado como insumo para o desenvolvimento da ideia e produto central, de modo que as personas desse projeto 
-serão baseadas em tais resultados. Espera-se, assim, gerar um artifício tecnológico inédito no campo acadêmico, que é a interação do aluno/usuário 
-no atendimento das expectativas do educando. Para isso, será utilizado o sistema de autofeedback que alimentará uma base de dados, 
-onde poderá ser representada de uma forma não convencional a qual existe hoje, trazendo uma coalizão do real e virtual, 
-de modo a gamificar o processo interativo do estudante durante as aulas. Por fim, a pesquisa mostra-se promissora na busca de uma melhor 
-relação docente-discente e na ressignificação do ensino remoto, reverberando na qualidade de ensino prestado.
+APP DigAí!: DESIGN E IMPLEMENTAÇÃO DE APLICATIVO
+
+
+JUSTIFICATIVA:
+Com o crescimento abrupto das atividades remotas de ensino e aprendizagem, notadamente com a pandemia do COVID-19 2020, observou-se uma necessidade de acompanhar em tempo real, pela ótica dos docentes, o nível de interesse, aprendizagem e aceitação das atividades on-line de maneira imediata (real-time). Este projeto se propõe a implementar um mecanismo de acompanhamento destas interações pelo professor, permitindo saber, em tempo real, como as pessoas do outro-lado, estão percebendo as mensagens e a comunicação, do ponto de vista pedagógico (feedback). A ferramenta “Nod - Reactions for Google Meet” realiza um trabalho semelhante, porém, apenas para o Chrome e sem registrar as interações. O registro das interações pode constituir uma boa base para a melhora contínua do processo de aprendizagem, através dos princípios de análise de dados (data science).
+
+PROBLEMA DE PESQUISA:
+É possível obter opinião (feedback) dos alunos remotos em tempo real (real-time) com uma solução de software?
+
+OBJETIVO GERAL:
+Implementar uma solução, de software, que permita, em tempo real (real-time) e de forma simples, sinalizar e informar a opinião (feedback) dos discentes remotos (estão gostando, estão aprendendo, estão positivos com as aulas?) para o docente, registrando as informações para futura análise (data, hora com precisão de segundos, discente, reação).
+
+OBJETIVOS ESPECÍFICOS:
+-Fornecer reações imediatas (real-time, síncrono) acerca da aula remota
+-Permitir acertos imediatos no andamento da aula remota
+-Coletar dados históricos da aula remota
+-Subsidiar a pesquisa de clima e condução de todas as aulas realizadas
+
+
+
+
+
