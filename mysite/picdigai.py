@@ -1,3 +1,13 @@
+#
+# FACULDADE SENAC PE
+# PROJETO DE INICIAÇÃO CIENTÍFICA - PIC
+#
+# PROJETO: DIGAI
+#
+# ORIENTADOR: PROF. ARNOTT RAMOS CAIADO
+#
+
+
 from flask import Flask, redirect
 from flask import request
 from flask import render_template
