@@ -16,13 +16,19 @@ from flask import render_template
 app = Flask(__name__)
 
 @app.route('/digaiword',  methods=['GET', 'POST'])
-def primeira():
+def input_palavra():
     if request.method == 'GET':
         return render_template('Digai_tela_PalavraUnica.html' )
     if request.method == 'POST':
         return render_template('digai_dashboard_aluno.html')
-#        return {'Digai': 'Termino ok!'}
+ #       return {'Digai': 'Termino ok!'}
 
+@app.route('/digaipalavra',  methods=['GET', 'POST'])
+def escolha_palavra():
+    if request.method == 'GET':
+        return render_template('digai_escolha_palavra.html' )
+    if request.method == 'POST':
+        return {'Digai': 'Termino ok!'}
 
 @app.route('/digai')
 def segunda():
