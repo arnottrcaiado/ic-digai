@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale-1.0">
+    <title>Botões</title>
+    <style>
+      body {
+        		font-family: Arial, Helvetica, sans-serif;
+               background-color:  rgba(127, 127, 139, 0.986);
+
+      }
+
+       h1{
+        color: white;
+        text-align: left;
+        font-size: 40px;
+       	font-family: Arial, Helvetica, sans-serif;
+        text-shadow: 5px 5px 5px rgb(0, 0, 0);
+    	}
+
+      .btn {
+        	width:210px;
+        	padding:18px 30px;
+        	font-size:16px;
+        	cursor: pointer;
+        	border: none;
+        	outline: none;
+        	text-align: center;
+        	color:white;
+          font-weight: bolder;
+
+
+      }
+
+      .verde {
+        	background-color: #4CAF50;
+
+      }
+      .verde:hover {
+        	background-color: #46A049;
+
+      }
+
+      .azul {
+        	background-color: #2196F3;
+      }
+
+      .azul:hover {
+        	background-color: #0b7dda;
+
+      }
+
+      .vermelho {
+          background-color: #f44336;
+
+      }
+      .vermelho:hover {
+        	background-color: #da190b;
+
+      }
+
+      div {
+        margin: 6px;
+      }
+
+    </style>
+    <script>
+        var vp11 ="";
+
+    	function mudaEstado( par ) {
+            document.getElementById( par ).style.color ="black";
+    	}
+
+        function mudaEstado11( par ) {
+            document.getElementById( par ).style.color ="black";
+            vp11 = "on";
+        }
+
+    </script>
+  </head>
+  <body>
+    <div>
+      <h1> Como você está se sentindo <br>
+        depois da aula de hoje? <br>
+        escolha de 4 a 8 opções </h1>
+    </div>
+    <form style="text-align: left;" method="post">
+        <div> 
+            <input id="p11" name="p11" onclick="mudaEstado11('p11')" class="btn verde" value="ANIMADO" type="button"> 
+            <input id="p12" name="p12" onclick="mudaEstado('p12')" class="btn verde" value="CONFUSO" type="button"> 
+            <input id="p13" name="p13" onclick="mudaEstado('p13')" class="btn verde" value="COM DÚVIDAS" type="button"> 
+            <input id="p14" name="p13" onclick="mudaEstado('p14')" class="btn verde" value="DESESPERADO" type="button"> 
+        </div>
+     
+      <div> <button class="btn vermelho" type="submit">Enviar</button> </div>
+    </form>
+  </body>
+</html>

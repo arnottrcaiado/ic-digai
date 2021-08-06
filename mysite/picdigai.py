@@ -8,7 +8,7 @@
 #
 
 
-from flask import Flask, redirect
+from flask import Flask
 from flask import request
 from flask import render_template
 
@@ -26,9 +26,29 @@ def input_palavra():
 @app.route('/digaipalavra',  methods=['GET', 'POST'])
 def escolha_palavra():
     if request.method == 'GET':
-        return render_template('digai_escolha_palavra.html' )
+        return render_template('digai_escolha_palavra_02.html' )
     if request.method == 'POST':
-        return {'Digai': 'Termino ok!'}
+        palavras=[]
+        if request.form.get('p11') != None :
+           palavras.append(request.form.get('p11'))
+        if request.form.get('p12') != None :
+           palavras.append(request.form.get('p12'))
+        if request.form.get('p13') != None :
+           palavras.append(request.form.get('p13'))
+        if request.form.get('p14') != None :
+           palavras.append(request.form.get('p14'))
+        if request.form.get('p21') != None :
+           palavras.append(request.form.get('p21'))
+        if request.form.get('p22') != None :
+           palavras.append(request.form.get('p22'))
+        if request.form.get('p23') != None :
+           palavras.append(request.form.get('p23'))
+        if request.form.get('p24') != None :
+           palavras.append(request.form.get('p24'))
+
+
+        return {'Digai':'ok', 'Palavras':palavras }
+
 
 @app.route('/digai')
 def segunda():

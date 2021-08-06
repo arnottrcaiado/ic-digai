@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale-1.0">
+    <title>Botões</title>
+    <style>
+      body {
+        		font-family: Arial, Helvetica, sans-serif;
+               background-color:  rgba(127, 127, 139, 0.986);
+
+      }
+
+       h1{
+        color: white;
+        text-align: left;
+        font-size: 40px;
+       	font-family: Arial, Helvetica, sans-serif;
+        text-shadow: 5px 5px 5px rgb(0, 0, 0);
+    	}
+
+      .btn {
+        	width:210px;
+        	padding:18px 30px;
+        	font-size:16px;
+        	cursor: pointer;
+        	border: none;
+        	outline: none;
+        	text-align: center;
+        	color:white;
+          font-weight: bolder;
+
+
+      }
+
+      .verde {
+        	background-color: #4CAF50;
+
+      }
+      .verde:hover {
+        	background-color: #46A049;
+
+      }
+
+      .azul {
+        	background-color: #2196F3;
+      }
+
+      .azul:hover {
+        	background-color: #0b7dda;
+
+      }
+
+      .vermelho {
+          background-color: #f44336;
+
+      }
+      .vermelho:hover {
+        	background-color: #da190b;
+
+      }
+
+      div {
+        margin: 6px;
+      }
+
+    </style>
+    <script>
+        var vp11 ="";
+
+    	function mudaEstado( par ) {
+            document.getElementById( par ).style.color ="black";
+    	}
+
+        function mudaEstado11( par ) {
+            document.getElementById( par ).style.color ="black";
+            vp11 = "on";
+        }
+
+    </script>
+  </head>
+  <body>
+    <div>
+      <h1> Como você está se sentindo <br>
+        depois da aula de hoje? <br>
+        escolha de 4 a 8 opções </h1>
+    </div>
+    <form style="text-align: left;" method="post">
+      <div> <input id="p11" name="p11" onclick="mudaEstado11('p11')" class="btn verde"
+value="ANIMADO" type="button"> <input id="p12" name="p12" onclick="mudaEstado('p12')" class="btn verde"
+value="CONFUSO" type="button"> <button id="p13" onclick="mudaEstado('p13')" class="btn verde">COM
+          DÚVIDAS</button> <button id="p14" onclick="mudaEstado('p14')"
+          class="btn verde">DESESPERADO</button> </div>
+      <div> <button id="p21" onclick="mudaEstado('p21')" class="btn azul">CURIOSO</button>
+        <button id="p22" onclick="mudaEstado('p22')" class="btn azul">ALEGRE</button>
+        <button id="p23" onclick="mudaEstado('p23')" class="btn azul">NERVOSO</button>
+        <button id="p24" onclick="mudaEstado('p24')" class="btn azul">EMPOLGADO</button>
+      </div>
+      <div> <button id="p31" onclick="mudaEstado('p31')" class="btn verde">CALMO</button>
+        <button id="p32" onclick="mudaEstado('p32')" class="btn verde">PESSIMISTA</button>
+        <button id="p33" onclick="mudaEstado('p33')" class="btn verde">ALIVIADO</button>
+        <button id="p34" onclick="mudaEstado('p34')" class="btn verde">ENTEDIADO</button>
+      </div>
+      <div> <button id="p41" onclick="mudaEstado('p41')" class="btn azul">INSEGURO</button>
+        <button id="p42" onclick="mudaEstado('p42')" class="btn azul">ORGULHOSO</button>
+        <button id="p43" onclick="mudaEstado('p43')" class="btn azul">RECEOSO</button>
+        <button id="p44" onclick="mudaEstado('p44')" class="btn azul">ALIVIADO</button>
+      </div>
+      <div> <button id="p51" onclick="mudaEstado('p51')" class="btn verde">CONFIANTE</button>
+        <button id="p52" onclick="mudaEstado('p52')" class="btn verde">PREOCUPADO</button>
+        <button id="p53" onclick="mudaEstado('p53')" class="btn verde">ENTUSIASMADO</button>
+        <button id="p54" onclick="mudaEstado('p54')" class="btn verde">OTIMISTA</button>
+      </div>
+      <div> <button class="btn vermelho" type="submit">Enviar</button> </div>
+    </form>
+  </body>
+</html>
