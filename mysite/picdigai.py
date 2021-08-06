@@ -6,6 +6,7 @@
 #
 # ORIENTADOR: PROF. ARNOTT RAMOS CAIADO
 #
+# -*- coding: utf-8 -*-
 
 
 from flask import Flask
@@ -26,28 +27,35 @@ def input_palavra():
 @app.route('/digaipalavra',  methods=['GET', 'POST'])
 def escolha_palavra():
     if request.method == 'GET':
-        return render_template('digai_escolha_palavra_02.html' )
+        return render_template('digai_escolha_palavra_input.html' )
     if request.method == 'POST':
         palavras=[]
-        if request.form.get('p11') != None :
-           palavras.append(request.form.get('p11'))
-        if request.form.get('p12') != None :
-           palavras.append(request.form.get('p12'))
-        if request.form.get('p13') != None :
-           palavras.append(request.form.get('p13'))
-        if request.form.get('p14') != None :
-           palavras.append(request.form.get('p14'))
-        if request.form.get('p21') != None :
-           palavras.append(request.form.get('p21'))
-        if request.form.get('p22') != None :
-           palavras.append(request.form.get('p22'))
-        if request.form.get('p23') != None :
-           palavras.append(request.form.get('p23'))
-        if request.form.get('p24') != None :
-           palavras.append(request.form.get('p24'))
-
+        for i in range (0,4 ):
+            vlinha = "p"+str(i+1)
+            for j in range (0,5) :
+                variavel = vlinha + str(j+1)
+                if request.form.get( variavel ) != None :
+                    palavras.append( request.form.get( variavel ))
 
         return {'Digai':'ok', 'Palavras':palavras }
+
+  #      if request.form.get('p11') != None :
+  #         palavras.append(request.form.get('p11'))
+  #      if request.form.get('p12') != None :
+  #         palavras.append(request.form.get('p12'))
+  #      if request.form.get('p13') != None :
+  #         palavras.append(request.form.get('p13'))
+  #      if request.form.get('p14') != None :
+  #         palavras.append(request.form.get('p14'))
+  #      if request.form.get('p21') != None :
+  #         palavras.append(request.form.get('p21'))
+  #      if request.form.get('p22') != None :
+  #         palavras.append(request.form.get('p22'))
+  #      if request.form.get('p23') != None :
+  #         palavras.append(request.form.get('p23'))
+  #      if request.form.get('p24') != None :
+  #         palavras.append(request.form.get('p24'))
+
 
 
 @app.route('/digai')

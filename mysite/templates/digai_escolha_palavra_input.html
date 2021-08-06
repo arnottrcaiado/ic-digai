@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale-1.0">
+    <title>Botões</title>
+    <style>
+      body {
+        		font-family: Arial, Helvetica, sans-serif;
+               background-color:  rgba(127, 127, 139, 0.986);
+
+      }
+
+       h1{
+        color: white;
+        text-align: left;
+        font-size: 40px;
+       	font-family: Arial, Helvetica, sans-serif;
+        text-shadow: 5px 5px 5px rgb(0, 0, 0);
+    	}
+
+      .btn {
+        	width:230px;
+        	padding:18px 30px;
+        	font-size:16px;
+        	cursor: pointer;
+        	border: none;
+        	outline: none;
+        	text-align: center;
+        	color:white;
+          font-weight: bolder;
+
+
+      }
+
+      .verde {
+        	background-color: #4CAF50;
+
+      }
+      .verde:hover {
+        	background-color: #46A049;
+
+      }
+
+      .azul {
+        	background-color: #2196F3;
+      }
+
+      .azul:hover {
+        	background-color: #0b7dda;
+
+      }
+
+      .vermelho {
+          background-color: #f44336;
+
+      }
+      .vermelho:hover {
+        	background-color: #da190b;
+
+      }
+
+      div {
+        margin: 6px;
+      }
+
+    </style>
+    <script>
+    	function mudaEstado( par ) {
+       document.getElementById( par ).style.color ="black";
+       document.getElementById( par ).name = par;
+      }
+    </script>
+  </head>
+  <body>
+    <div>
+      <h1> Neste momento<br>
+        as palavras que melhor representam meus sentimentos ... <br>
+        escolha de 4 a 8 opções </h1>
+    </div>
+    <form style="text-align: left;" method="post">
+        <div>
+            <input id="p11" onclick="mudaEstado('p11')" class="btn verde" value="ANIMAÇÃO" readonly="readonly">
+            <input id="p12" onclick="mudaEstado('p12')" class="btn verde" value="CONFUSÃO" readonly="readonly">
+            <input id="p13" onclick="mudaEstado('p13')" class="btn verde" value="DÚVIDAS" readonly="readonly">
+            <input id="p14" onclick="mudaEstado('p14')" class="btn verde" value="DESESPERO" readonly="readonly">
+        </div>
+        <div>
+            <input id="p21" onclick="mudaEstado('p21')" class="btn verde" value="CURIOSIDADE" readonly="readonly">
+            <input id="p22" onclick="mudaEstado('p22')" class="btn verde" value="ALEGRIA" readonly="readonly">
+            <input id="p23" onclick="mudaEstado('p23')" class="btn verde" value="NERVOSISMO" readonly="readonly">
+            <input id="p24" onclick="mudaEstado('p24')" class="btn verde" value="EMPOLGAÇÃO" readonly="readonly">
+        </div>
+        <div>
+            <input id="p31" onclick="mudaEstado('p31')" class="btn verde" value="CALMA" readonly="readonly">
+            <input id="p32" onclick="mudaEstado('p32')" class="btn verde" value="PESSIMISMO" readonly="readonly">
+            <input id="p33" onclick="mudaEstado('p33')" class="btn verde" value="ALÍVIO" readonly="readonly">
+            <input id="p34" onclick="mudaEstado('p34')" class="btn verde" value="TÉDIO" readonly="readonly">
+        </div>
+        <div>
+            <input id="p41" onclick="mudaEstado('p41')" class="btn verde" value="INSEGURANÇA" readonly="readonly">
+            <input id="p42" onclick="mudaEstado('p42')" class="btn verde" value="ORGULHO" readonly="readonly">
+            <input id="p43" onclick="mudaEstado('p43')" class="btn verde" value="RECEIO" readonly="readonly">
+            <input id="p44" onclick="mudaEstado('p44')" class="btn verde" value="ANSIEDADE" readonly="readonly">
+        </div>
+        <div>
+            <input id="p51" onclick="mudaEstado('p51')" class="btn verde" value="CONFIANÇA" readonly="readonly">
+            <input id="p52" onclick="mudaEstado('p52')" class="btn verde" value="PREOCUPAÇÃO" readonly="readonly">
+            <input id="p53" onclick="mudaEstado('p53')" class="btn verde" value="ENTUSIASMO" readonly="readonly">
+            <input id="p54" onclick="mudaEstado('p54')" class="btn verde" value="OTIMISMO" readonly="readonly">
+        </div>
+        <div>
+            <button class="btn vermelho" type="reset" >Reset</button>
+            <button class="btn azul" type="submit">Enviar</button>
+        </div>
+    </form>
+  </body>
+</html>
