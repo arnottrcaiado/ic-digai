@@ -35,7 +35,8 @@ def escolha_palavra():
             for j in range (0,5) :
                 variavel = vlinha + str(j+1)
                 if request.form.get( variavel ) != None :
-                    palavras.append( request.form.get( variavel ))
+                    if len(request.form.get( variavel )) > 1 :
+                        palavras.append( request.form.get( variavel ))
 
         return {'Digai':'ok', 'Palavras':palavras }
 

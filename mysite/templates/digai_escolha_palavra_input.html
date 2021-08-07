@@ -67,8 +67,13 @@
     </style>
     <script>
     	function mudaEstado( par ) {
-       document.getElementById( par ).style.color ="black";
-       document.getElementById( par ).name = par;
+    	    if (document.getElementById( par ).name == par ) {
+    	        document.getElementById( par ).style.color = "white"
+    	        document.getElementById( par ).name = "";
+    	    } else {
+                document.getElementById( par ).style.color = "black"
+                document.getElementById( par ).name = par;
+    	    }
       }
     </script>
   </head>
@@ -110,7 +115,6 @@
             <input id="p54" onclick="mudaEstado('p54')" class="btn verde" value="OTIMISMO" readonly="readonly">
         </div>
         <div>
-            <button class="btn vermelho" type="reset" >Reset</button>
             <button class="btn azul" type="submit">Enviar</button>
         </div>
     </form>
