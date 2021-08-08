@@ -6,13 +6,13 @@
 #
 # ORIENTADOR: PROF. ARNOTT RAMOS CAIADO
 #
-# -*- coding: utf-8 -*-
+
+# -*- coding: UTF-8 -*-
 
 
 from flask import Flask
-from flask import request
+from flask import request,json
 from flask import render_template
-
 
 app = Flask(__name__)
 
@@ -27,7 +27,10 @@ def input_palavra():
 @app.route('/digaipalavra',  methods=['GET', 'POST'])
 def escolha_palavra():
     if request.method == 'GET':
-        return render_template('digai_escolha_palavra_input.html' )
+        cor ="laranja"
+        if request.args.get('cor') != None :
+            cor = request.args.get('cor')
+        return render_template('digai_escolha_palavra_input.html', cor=cor )
     if request.method == 'POST':
         palavras=[]
         for i in range (0,4 ):
@@ -38,7 +41,7 @@ def escolha_palavra():
                     if len(request.form.get( variavel )) > 1 :
                         palavras.append( request.form.get( variavel ))
 
-        return {'Digai':'ok', 'Palavras':palavras }
+        return json.dumps({'Digai':'ok', 'Palavras':palavras }, ensure_ascii=False)
 
   #      if request.form.get('p11') != None :
   #         palavras.append(request.form.get('p11'))

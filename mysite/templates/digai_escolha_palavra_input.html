@@ -28,8 +28,7 @@
         	outline: none;
         	text-align: center;
         	color:white;
-          font-weight: bolder;
-
+            font-weight: bolder;
 
       }
 
@@ -59,6 +58,24 @@
         	background-color: #da190b;
 
       }
+      .laranja {
+            background-color: #FF8C00;
+      }
+      .laranja:hover {
+            background-color: #A0522D;
+      }
+      .golden {
+          background-color: #DAA520;
+      }
+      .golder:hover {
+            background-color: #B8860B;
+      }
+      .grey21 {
+          background-color: #363636;
+      }
+      .grey21:hover {
+          background-color:#4F4F4F;
+      }
 
       div {
         margin: 6px;
@@ -85,37 +102,37 @@
     </div>
     <form style="text-align: left;" method="post">
         <div>
-            <input id="p11" onclick="mudaEstado('p11')" class="btn verde" value="ANIMAÇÃO" readonly="readonly">
-            <input id="p12" onclick="mudaEstado('p12')" class="btn verde" value="CONFUSÃO" readonly="readonly">
-            <input id="p13" onclick="mudaEstado('p13')" class="btn verde" value="DÚVIDAS" readonly="readonly">
-            <input id="p14" onclick="mudaEstado('p14')" class="btn verde" value="DESESPERO" readonly="readonly">
+            <input id="p11" onclick="mudaEstado('p11')" class="btn {{cor}}" value="ANIMAÇÃO" readonly="readonly">
+            <input id="p12" onclick="mudaEstado('p12')" class="btn {{cor}}" value="CONFUSÃO" readonly="readonly">
+            <input id="p13" onclick="mudaEstado('p13')" class="btn {{cor}}" value="DÚVIDAS" readonly="readonly">
+            <input id="p14" onclick="mudaEstado('p14')" class="btn {{cor}}" value="DESESPERO" readonly="readonly">
         </div>
         <div>
-            <input id="p21" onclick="mudaEstado('p21')" class="btn verde" value="CURIOSIDADE" readonly="readonly">
-            <input id="p22" onclick="mudaEstado('p22')" class="btn verde" value="ALEGRIA" readonly="readonly">
-            <input id="p23" onclick="mudaEstado('p23')" class="btn verde" value="NERVOSISMO" readonly="readonly">
-            <input id="p24" onclick="mudaEstado('p24')" class="btn verde" value="EMPOLGAÇÃO" readonly="readonly">
+            <input id="p21" onclick="mudaEstado('p21')" class="btn {{cor}}" value="CURIOSIDADE" readonly="readonly">
+            <input id="p22" onclick="mudaEstado('p22')" class="btn {{cor}}" value="ALEGRIA" readonly="readonly">
+            <input id="p23" onclick="mudaEstado('p23')" class="btn {{cor}}" value="NERVOSISMO" readonly="readonly">
+            <input id="p24" onclick="mudaEstado('p24')" class="btn {{cor}}" value="EMPOLGAÇÃO" readonly="readonly">
         </div>
         <div>
-            <input id="p31" onclick="mudaEstado('p31')" class="btn verde" value="CALMA" readonly="readonly">
-            <input id="p32" onclick="mudaEstado('p32')" class="btn verde" value="PESSIMISMO" readonly="readonly">
-            <input id="p33" onclick="mudaEstado('p33')" class="btn verde" value="ALÍVIO" readonly="readonly">
-            <input id="p34" onclick="mudaEstado('p34')" class="btn verde" value="TÉDIO" readonly="readonly">
+            <input id="p31" onclick="mudaEstado('p31')" class="btn {{cor}}" value="CALMA" readonly="readonly">
+            <input id="p32" onclick="mudaEstado('p32')" class="btn {{cor}}" value="PESSIMISMO" readonly="readonly">
+            <input id="p33" onclick="mudaEstado('p33')" class="btn {{cor}}" value="ALÍVIO" readonly="readonly">
+            <input id="p34" onclick="mudaEstado('p34')" class="btn {{cor}}" value="TÉDIO" readonly="readonly">
         </div>
         <div>
-            <input id="p41" onclick="mudaEstado('p41')" class="btn verde" value="INSEGURANÇA" readonly="readonly">
-            <input id="p42" onclick="mudaEstado('p42')" class="btn verde" value="ORGULHO" readonly="readonly">
-            <input id="p43" onclick="mudaEstado('p43')" class="btn verde" value="RECEIO" readonly="readonly">
-            <input id="p44" onclick="mudaEstado('p44')" class="btn verde" value="ANSIEDADE" readonly="readonly">
+            <input id="p41" onclick="mudaEstado('p41')" class="btn {{cor}}" value="INSEGURANÇA" readonly="readonly">
+            <input id="p42" onclick="mudaEstado('p42')" class="btn {{cor}}" value="ORGULHO" readonly="readonly">
+            <input id="p43" onclick="mudaEstado('p43')" class="btn {{cor}}" value="RECEIO" readonly="readonly">
+            <input id="p44" onclick="mudaEstado('p44')" class="btn {{cor}}" value="ANSIEDADE" readonly="readonly">
         </div>
         <div>
-            <input id="p51" onclick="mudaEstado('p51')" class="btn verde" value="CONFIANÇA" readonly="readonly">
-            <input id="p52" onclick="mudaEstado('p52')" class="btn verde" value="PREOCUPAÇÃO" readonly="readonly">
-            <input id="p53" onclick="mudaEstado('p53')" class="btn verde" value="ENTUSIASMO" readonly="readonly">
-            <input id="p54" onclick="mudaEstado('p54')" class="btn verde" value="OTIMISMO" readonly="readonly">
+            <input id="p51" onclick="mudaEstado('p51')" class="btn {{cor}}" value="CONFIANÇA" readonly="readonly">
+            <input id="p52" onclick="mudaEstado('p52')" class="btn {{cor}}" value="PREOCUPAÇÃO" readonly="readonly">
+            <input id="p53" onclick="mudaEstado('p53')" class="btn {{cor}}" value="ENTUSIASMO" readonly="readonly">
+            <input id="p54" onclick="mudaEstado('p54')" class="btn {{cor}}" value="OTIMISMO" readonly="readonly">
         </div>
         <div>
-            <button class="btn azul" type="submit">Enviar</button>
+            <button class="btn grey21" type="submit">Enviar</button>
         </div>
     </form>
   </body>
