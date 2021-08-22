@@ -3,8 +3,87 @@
   <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale-1.0"/>
-    <link rel="stylesheet" type="text/css" link href="/static/css/base.css">
+    <link rel="stylesheet" link href="/static/css/base.css">
+
     <title>Botões</title>
+    <style>
+      body {
+        		font-family: Arial, Helvetica, sans-serif;
+               background-color:  rgba(128, 128, 128);
+
+      }
+
+       h1{
+        color: white;
+        text-align: left;
+        font-size: 40px;
+       	font-family: Arial, Helvetica, sans-serif;
+        text-shadow: 5px 5px 5px rgb(0, 0, 0);
+    	}
+
+      .btn {
+        	width:230px;
+        	padding:18px 30px;
+        	font-size:16px;
+        	cursor: pointer;
+        	border: none;
+        	outline: none;
+        	text-align: center;
+        	color:white;
+            font-weight: bolder;
+
+      }
+
+      .verde {
+        	background-color: #4CAF50;
+
+      }
+      .verde:hover {
+        	background-color: #46A049;
+
+      }
+
+      .azul {
+        	background-color: #2196F3;
+      }
+
+      .azul:hover {
+        	background-color: #0b7dda;
+
+      }
+
+      .vermelho {
+          background-color: #f44336;
+
+      }
+      .vermelho:hover {
+        	background-color: #da190b;
+
+      }
+      .laranja {
+            background-color: #FF8C00;
+      }
+      .laranja:hover {
+            background-color: #A0522D;
+      }
+      .golden {
+          background-color: #DAA520;
+      }
+      .golder:hover {
+            background-color: #B8860B;
+      }
+      .grey21 {
+          background-color: #363636;
+      }
+      .grey21:hover {
+          background-color:#4F4F4F;
+      }
+
+      div {
+        margin: 6px;
+      }
+
+    </style>
     <script>
     	function mudaEstado( par ) {
     	    if (document.getElementById( par ).name == par ) {
@@ -17,7 +96,6 @@
       }
     </script>
   </head>
-
   <body>
     <div>
       <h1> Neste momento, quais Palavras<br>
