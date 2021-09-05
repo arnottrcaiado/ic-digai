@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 26px;
+    color: #f9fafa;
+}
+
+body {
+    background-color: #949db0;
+}
+
+.azul {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    align-self: center;
+    margin-top: 90px;
+}
+
+.digai {
+    display: flex;
+    
+}
+
+.vermelho {
+    display: flexbox;
+    text-align: center;
+    margin: 0 120px;
+}
+
+.vermelho section{
+    margin: 3px;
+}
+
+.digai button {
+    width: 97%;
+    padding: 4px;
+    margin: 3px 0;
+}
+
+.outronome button{
+    border: 0;
+    background-color: #2196f3;
+    color: #f9fafa;
+} 
+
+.outronome button:hover{
+    border: 0;
+    background-color: #1e83d6;
+    
+}
+
+.outronome h1 {
+    background-color: #2196f3;
+    padding: 23px;
+    color: #f9fafa;
+}
+
+.qualquernome button{
+    border: 0;
+    background-color: #f9fafa;
+    color: #81899b;    
+
+} 
+
+.qualquernome button:hover{
+    border: 0;
+    background-color: #f9fafa;
+}
+
+
+.qualquernome h1{
+    background-color: #f9fafa;
+    padding: 23px;
+    margin: 0;
+    color: #81899b;    
+
+}
+.a{
+    color: #81899b;    
+}
+
+.verdinho h1 {
+    font-size: 40px;
+    text-align: center;
+    
+}
+
+.verdinho h3 {
+    font-size: 25px;
+    text-align: end;
+}
+
+.descricao li {
+    list-style: none;
+    text-align: center;
+    margin: 100px 0;
+}
+
+.descricao li ul {
+    margin: 4px 0;
+}
+
+.inter {
+    background-color: #7a7a90;
+    padding: 5px;
+    margin-left: 7px;
+    width: 90%;
+    justify-content: center;
+    color: #f9fafa;
+    
+}
+
+.end-page{
+    font-size: 20px;
+    color: #f9fafa;
+}
+
+.end-page section{
+    background-color: white;
+    padding: 2px;
+    margin: 5px 0;
+    width: 10%;
+}
+.li-of-ya button{
+    display: flex;
+    margin-left: 20px;
+    width: 80%;
+    font-size: 15px;
+}
+#nextArrow{
+    float: right;
+    text-decoration: none;
+    font-size: 22px;
+    margin: 140px 0;    
+}
+
+    

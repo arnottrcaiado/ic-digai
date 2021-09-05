@@ -60,7 +60,9 @@ def escolha_palavra():
   #      if request.form.get('p24') != None :
   #         palavras.append(request.form.get('p24'))
 
-
+@app.route('/digai/interacao', methods=['GET', 'POST'])
+def interacao():
+    return render_template('digai_interacao.html')
 
 @app.route('/digai')
 def segunda():
