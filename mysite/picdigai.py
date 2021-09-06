@@ -110,10 +110,10 @@ def interacao():
             dig.append('gifts')
         if request.form.get('challenge') != None :
             dig.append('challenge')
-        if request.form.get('help') != None :
+        if request.form.get('help-me') != None :
             dig.append('help')
 
-        return json.dumps({'Estudante': nome, 'Secao': secao, 'Inter:': ninter,'DigaiInteracao':'ok', 'Who':who, 'Dig': dig }, ensure_ascii=False)
+        return json.dumps({'Nome': nome, 'Secao': secao, 'Inter:': ninter,'DigaiInteracao':'ok', 'Who':who, 'Dig': dig }, ensure_ascii=False)
 
 @app.route('/digai')
 def segunda():
