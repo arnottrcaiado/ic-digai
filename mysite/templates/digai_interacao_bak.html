@@ -8,20 +8,27 @@
   <link rel="stylesheet" link href="/static/css/digai_interacao.css">
   <title>Document</title>
       <script>
-        var digs = 0;
         var cats = 0;
-
+        var digs = 0;
         function mudaWho ( par ){
+            var cats = 0;
+
             if ( document.getElementById( par ).name == par ){
                 document.getElementById( par ).style.color = "white";
                 document.getElementById( par ).name = "";
-                cats = cats -1;
             } else {
-
+                if (document.getElementById( 'you' ).name == 'you') {
+                    cats = cats +1;
+                }
+                if (document.getElementById( 'teacher' ).name == 'teacher') {
+                    cats = cats +1;
+                }
+                if (document.getElementById( 'all' ).name == 'all') {
+                    cats = cats +1;
+                }
                 if ( cats == 0) {
                     document.getElementById ( par ).style.color = "black";
                     document.getElementById ( par ).name = par;
-                    cats = cats +1;
                 }
                 else {
                     refreshPage();
@@ -30,17 +37,33 @@
         }
 
         function mudaDig ( par ){
+            var digs = 0;
 
             if ( document.getElementById( par ).name == par ){
-                document.getElementById( par ).style.color = 'white' ;
+                document.getElementById( par ).style.color = '#f9fafa' ;
                 document.getElementById( par ).name = "";
-                digs = digs -1;
             } else {
-
+                if (document.getElementById( 'challenge' ).name == 'challenge') {
+                    digs = digs +1;
+                }
+                if (document.getElementById( 'power' ).name == 'power') {
+                    digs = digs +1;
+                }
+                if (document.getElementById( 'question' ).name == 'question') {
+                    digs = digs +1;
+                }
+                if (document.getElementById( 'answer' ).name == 'answer') {
+                    digs = digs +1;
+                }
+                if (document.getElementById( 'gifts' ).name == 'gifts') {
+                    digs = digs +1;
+                }
+                if (document.getElementById( 'help' ).name == 'help') {
+                    digs = digs +1;
+                }
                 if ( digs == 0) {
                     document.getElementById ( par ).style.color = "black";
                     document.getElementById ( par ).name = par;
-                    digs = digs+1;
                 }
                 else {
                     refreshPage();
