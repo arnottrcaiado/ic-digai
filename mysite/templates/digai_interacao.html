@@ -34,6 +34,40 @@
             }
         }
 
+        function mudaDig ( par ){
+            var digs = 0;
+
+            if ( document.getElementById( par ).name == par ){
+                document.getElementById( par ).style.color = '#f9fafa' ;
+                document.getElementById( par ).name = "";
+            } else {
+                if (document.getElementById( 'challenge' ).name == 'challenge') {
+                    digs = digs +1;
+                }
+                if (document.getElementById( 'power' ).name == 'power') {
+                    digs = digs +1;
+                }
+                if (document.getElementById( 'question' ).name == 'question') {
+                    digs = digs +1;
+                }
+                if (document.getElementById( 'answer' ).name == 'answer') {
+                    digs = digs +1;
+                }
+                if (document.getElementById( 'gifts' ).name == 'gifts') {
+                    digs = digs +1;
+                }
+                if (document.getElementById( 'help' ).name == 'help') {
+                    digs = digs +1;
+                }
+                if ( digs == 0) {
+                    document.getElementById ( par ).style.color = "black";
+                    document.getElementById ( par ).name = par;
+                }
+                else {
+                    refreshPage();
+                }
+            }
+        }
         function refreshPage() {
             window.location.reload();
         }
@@ -51,13 +85,13 @@
       <section class="descricao">
         <li>
           <ul>
-            <span>nomenomenome</span>
+            <span>{{nome}}</span>
           </ul>
           <ul>
-            <span>section n.</span>
+            <span>Seção {{secao}}</span>
           </ul>
           <ul>
-            <span> interact n.</span>
+            <span> # {{ninter}}</span>
           </ul>
         </li>
         <section class="end-page">
@@ -68,42 +102,43 @@
 
     </section>
 
+    <form style="text-align: left;" method="post">
     <section class="vermelho">
       <h1 class="inter">Interaction</h1>
       <section class="digai">
-        <section class="outronome">
+        <section class="who">
           <h1>To <p>Who?</p></h1>
-          <button type = "button" id="all" onclick="mudaWho('all')" value = "all">All</button>
+          <input id="all" onclick="mudaWho('all')" value = "all" readonly="readonly" >
           <br>
-          <button type="button" id="teacher" onclick="mudaWho('teacher')" value = "teacher">Teacher</button>
+          <input id="teacher" onclick="mudaWho('teacher')" value = "teacher" readonly="readonly">
           <br>
-          <button type="button" id="you" onclick="mudaWho('you')" value = "you">You</button>
+          <input  id="you" onclick="mudaWho('you')" value = "you" readonly="readonly" >
           <section class="li-of-ya">
             <button type="submit"> list </button>
           </section>
         </section>
 
-        <section class="qualquernome">
+        <section class="dig">
           <h1>Dig? <p class="a">Action</p></h1>
-          <button type="submit"> power </button>
+          <input id="power" onclick="mudaDig('power')" value = "power" readonly="readonly">
           <br>
-          <button type="submit"> question </button>
+          <input id="question" onclick="mudaDig('question')" value = "question" readonly="readonly">
           <br>
-          <button type="submit"> answer </button>
+          <input id="answer" onclick="mudaDig('answer')" value = "answer" readonly="readonly">
           <br>
-          <button type="submit"> challenge </button>
+          <input id="challenge" onclick="mudaDig('challenge')" value = "challenge" readonly="readonly">
           <br>
-          <button type="submit"> gifts </button>
+          <input id="gifts" onclick="mudaDig('gifts')" value = "gifts" readonly="readonly">
           <br>
-          <button type="submit"> help </button>
+          <input id="help" onclick="mudaDig('help')" value = "help" readonly="readonly" >
         </section>
       </section>
-    </section>
+     </section>
+        <a>
+            <button class="btngo" type="submit" ># Go >> </button>
+        </a>
+    </form>
 
-    <a  id="nextArrow" href="#">
-      <span>Go</span>
-      <img src="/static/images/GoArrow.png" width="30px" alt="Next_Button">
-    </a>
   </section>
 </body>
 

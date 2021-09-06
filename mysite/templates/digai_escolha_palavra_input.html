@@ -6,13 +6,20 @@
     <link rel="stylesheet" type="text/css" link href="/static/css/base.css">
     <title>Botões</title>
     <script>
+        var maxPalavras = 0;
         function mudaEstado ( par ){
             if ( document.getElementById( par ).name == par ){
                 document.getElementById( par ).style.color = "white";
-                document.getElementById( pad ).name = "";
+                document.getElementById( par ).name = "";
+                if ( maxPalavras > 0){
+                    maxPalavras = maxPalavras -1;
+                }
             } else {
-                document.getElementById ( par ).style.color = "black";
-                document.getElementById ( par ).name = par;
+                if ( maxPalavras < 8 ) {
+                    document.getElementById ( par ).style.color = "black";
+                    document.getElementById ( par ).name = par;
+                    maxPalavras = maxPalavras +1 ;
+                }
             }
         }
     </script>
@@ -24,7 +31,7 @@
       <h1> Neste momento, quais Palavras<br>
         melhor representam seu sentimento<br>
         após esta aula de hoje ?<br>
-        escolha de 4 a 8 opções </h1>
+        escolha até 8 opções </h1>
     </div>
     <form style="text-align: left;" method="post">
         <div>

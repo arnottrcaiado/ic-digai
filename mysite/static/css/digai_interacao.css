@@ -5,8 +5,23 @@
     color: #f9fafa;
 }
 
+
 body {
-    background-color: #949db0;
+    background-color:#949db0;
+}
+
+.btngo {
+        background-color:#1C1C1C;
+        color: white;
+}
+.btnwho {
+        background-color:#0000FF;
+        color: white;
+}
+
+.btndig {
+        background-color:#FFA500;
+        color: white;
 }
 
 .azul {
@@ -44,56 +59,69 @@ body {
     margin: 3px 0;
 }
 
-.outronome input{
+.who input{
     border: 0;
-    background-color: #2196f3;
-    color: #f9fafa;
-}
-
-.outronome input:hover{
-    border: 0;
-    background-color: #1e83d6;
+    background-color:#00BFFF;
+    color: white;
+    text-align: center;
 
 }
 
-.outronome button{
-    border: 0;
-    background-color: #2196f3;
-    color: #f9fafa;
-}
-
-.outronome button:hover{
+.who input:hover{
     border: 0;
     background-color: #1e83d6;
 
 }
 
-.outronome h1 {
+.who button{
+    border: 0;
+    background-color:#00BFFF;
+    color: white;
+}
+
+.who button:hover{
+    border: 0;
+    background-color: #1e83d6;
+
+}
+
+.who h1 {
     background-color: #2196f3;
     padding: 23px;
     color: #f9fafa;
 }
 
-.qualquernome button{
+.dig button{
     border: 0;
-    background-color: #f9fafa;
-    color: #81899b;
+    background-color:#FFA500;
+    color: white;
 
 }
-
-.qualquernome button:hover{
+.dig input{
     border: 0;
-    background-color: #f9fafa;
+    background-color:#FFA500;
+    color: white;
+    text-align: center;
 }
 
+.dig button:hover{
+    border: 0;
+    background-color: #1e83d6;
+}
 
-.qualquernome h1{
-    background-color: #f9fafa;
+.dig input:hover{
+    border: 0;
+    background-color: #1e83d6;
+}
+
+.dig h1{
+    background-color: #FF8C00;
     padding: 23px;
     margin: 0;
-    color: #81899b;
+    color: white;
 
 }
+
 .a{
     color: #81899b;
 }
@@ -120,7 +148,7 @@ body {
 }
 
 .inter {
-    background-color: #7a7a90;
+    background-color:  #7a7a90;
     padding: 5px;
     margin-left: 7px;
     width: 90%;
