@@ -19,7 +19,7 @@ body {
 
 .digai {
     display: flex;
-    
+
 }
 
 .vermelho {
@@ -38,16 +38,34 @@ body {
     margin: 3px 0;
 }
 
+.digai input {
+    width: 97%;
+    padding: 4px;
+    margin: 3px 0;
+}
+
+.outronome input{
+    border: 0;
+    background-color: #2196f3;
+    color: #f9fafa;
+}
+
+.outronome input:hover{
+    border: 0;
+    background-color: #1e83d6;
+
+}
+
 .outronome button{
     border: 0;
     background-color: #2196f3;
     color: #f9fafa;
-} 
+}
 
 .outronome button:hover{
     border: 0;
     background-color: #1e83d6;
-    
+
 }
 
 .outronome h1 {
@@ -59,9 +77,9 @@ body {
 .qualquernome button{
     border: 0;
     background-color: #f9fafa;
-    color: #81899b;    
+    color: #81899b;
 
-} 
+}
 
 .qualquernome button:hover{
     border: 0;
@@ -73,17 +91,17 @@ body {
     background-color: #f9fafa;
     padding: 23px;
     margin: 0;
-    color: #81899b;    
+    color: #81899b;
 
 }
 .a{
-    color: #81899b;    
+    color: #81899b;
 }
 
 .verdinho h1 {
     font-size: 40px;
     text-align: center;
-    
+
 }
 
 .verdinho h3 {
@@ -108,7 +126,7 @@ body {
     width: 90%;
     justify-content: center;
     color: #f9fafa;
-    
+
 }
 
 .end-page{
@@ -132,7 +150,7 @@ body {
     float: right;
     text-decoration: none;
     font-size: 22px;
-    margin: 140px 0;    
+    margin: 140px 0;
 }
 
-    
+

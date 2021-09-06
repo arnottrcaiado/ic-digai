@@ -7,6 +7,37 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" link href="/static/css/digai_interacao.css">
   <title>Document</title>
+      <script>
+        function mudaWho ( par ){
+            var cats = 0;
+
+            if ( document.getElementById( par ).name == par ){
+                document.getElementById( par ).style.color = "white";
+                document.getElementById( par ).name = "";
+            } else {
+                if (document.getElementById( 'you' ).name == 'you') {
+                    cats = cats +1;
+                }
+                if (document.getElementById( 'teacher' ).name == 'teacher') {
+                    cats = cats +1;
+                }
+                if (document.getElementById( 'all' ).name == 'all') {
+                    cats = cats +1;
+                }
+                if ( cats == 0) {
+                    document.getElementById ( par ).style.color = "black";
+                    document.getElementById ( par ).name = par;
+                }
+                else {
+                    refreshPage();
+                }
+            }
+        }
+
+        function refreshPage() {
+            window.location.reload();
+        }
+    </script>
 </head>
 
 <body>
@@ -38,35 +69,33 @@
     </section>
 
     <section class="vermelho">
-      <h1 class="inter">Interacao</h1>
+      <h1 class="inter">Interaction</h1>
       <section class="digai">
         <section class="outronome">
-          <h1>Para <p>Quem?</p></h1>
-          <button type="submit"> EU </button>
+          <h1>To <p>Who?</p></h1>
+          <button type = "button" id="all" onclick="mudaWho('all')" value = "all">All</button>
           <br>
-          <button type="submit"> Professor </button>
+          <button type="button" id="teacher" onclick="mudaWho('teacher')" value = "teacher">Teacher</button>
           <br>
-          <button type="submit"> Todos </button>
-          <br>
-          <button type="submit"> Voce </button>
+          <button type="button" id="you" onclick="mudaWho('you')" value = "you">You</button>
           <section class="li-of-ya">
-            <button type="submit"> lista </button>
+            <button type="submit"> list </button>
           </section>
         </section>
 
         <section class="qualquernome">
-          <h1>Dig? <p class="a">Acao</p></h1>
-          <button type="submit"> energia </button>
+          <h1>Dig? <p class="a">Action</p></h1>
+          <button type="submit"> power </button>
           <br>
-          <button type="submit"> pergunta </button>
+          <button type="submit"> question </button>
           <br>
-          <button type="submit"> resposta </button>
+          <button type="submit"> answer </button>
           <br>
-          <button type="submit"> desafio </button>
+          <button type="submit"> challenge </button>
           <br>
-          <button type="submit"> sentimento </button>
+          <button type="submit"> gifts </button>
           <br>
-          <button type="submit"> ajuda </button>
+          <button type="submit"> help </button>
         </section>
       </section>
     </section>
