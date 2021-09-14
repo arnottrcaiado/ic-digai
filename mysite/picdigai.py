@@ -94,24 +94,16 @@ def interacao():
     if request.method == 'POST' :
         who=[]
         dig=[]
-        if request.form.get('all') != None :
-            who.append('all')
-        if request.form.get('you') != None :
-            who.append('you')
-        if request.form.get('teacher') != None :
-            who.append('teacher')
-        if request.form.get('power') != None :
-            dig.append('power')
-        if request.form.get('answer') != None :
-            dig.append('answer')
-        if request.form.get('question') != None :
-            dig.append('question')
-        if request.form.get('gifts') != None :
-            dig.append('gifts')
-        if request.form.get('challenge') != None :
-            dig.append('challenge')
-        if request.form.get('help-me') != None :
-            dig.append('help')
+
+        whoTerms={ 'all':'all','you':'you', 'teacher':'teacher' }
+        digTerms=dict( power='power', answer='answer', question='question', gifts='gifts', helpme='helpme')
+        for i in whoTerms :
+            if request.form.get( i ) != None :
+                who.append( whoTerms[i] )
+        for i in digTerms :
+            if request.form.get( i ) != None :
+                dig.append ( digTerms[i] )
+
 
         return json.dumps({'Nome': nome, 'Secao': secao, 'Inter:': ninter,'DigaiInteracao':'ok', 'Who':who, 'Dig': dig }, ensure_ascii=False)
 
